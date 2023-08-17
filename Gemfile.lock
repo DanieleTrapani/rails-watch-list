@@ -87,6 +87,8 @@ GEM
     execjs (2.8.1)
     faker (3.2.1)
       i18n (>= 1.8.11, < 2)
+    feathericon-rails (1.0.2)
+      rails (>= 4.0.0)
     ffi (1.15.5)
     font-awesome-sass (6.4.2)
       sassc (~> 2.0)
@@ -241,6 +243,7 @@ DEPENDENCIES
   bootstrap (~> 5.2)
   debug
   faker
+  feathericon-rails
   font-awesome-sass (~> 6.1)
   httparty
   importmap-rails

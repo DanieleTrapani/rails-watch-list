@@ -1,0 +1,15 @@
+<%= render 'partials/nav' %>
+<div class="banner">
+  <h1>Save your favourite movies</h1>
+</div>
+<div class="lists container py-5">
+  <div class="info d-flex justify-content-between">
+    <h4>My Lists</h4>
+    <%= link_to 'Create a new List', new_list_path %>
+  </div>
+  <div class="d-flex justify-content-evenly py-5">
+    <% @lists.each do |list| %>
+      <%= render partial: 'partials/list', locals: {list:} %>
+    <% end %>
+  </div>
+</div>

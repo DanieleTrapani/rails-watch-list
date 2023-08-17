@@ -74,3 +74,4 @@ gem "font-awesome-sass", "~> 6.1"
 gem "simple_form"
 gem "httparty"
 gem 'json'
+gem 'feathericon-rails'
