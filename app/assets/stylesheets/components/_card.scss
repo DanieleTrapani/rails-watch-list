@@ -3,9 +3,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  height: 10rem;
+  height: 12rem;
 }
 
 .card-title {
   font-weight: bolder;
+}
+
+.card-body a {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    text-decoration: underline;
+  }
 }
