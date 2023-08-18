@@ -1,4 +1,4 @@
-.card {
+.list-card {
   background-image: asset-url("list-back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -6,11 +6,11 @@
   height: 12rem;
 }
 
-.card-title {
+.list-card-title {
   font-weight: bolder;
 }
 
-.card-body a {
+.list-body a {
   text-decoration: none;
   color: white;
   &:hover {

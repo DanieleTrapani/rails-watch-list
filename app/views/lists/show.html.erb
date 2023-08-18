@@ -3,5 +3,21 @@
     <h1>Movies in <%= @list.name %> List</h1>
     <%= link_to "Add new Movie", new_list_bookmark_path(@list) %>
   </div>
+  <div class="card-deck d-flex">
+    <% @list.bookmarks.each do |bookmark| %>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top img-thumbnail" src="<%= bookmark.movie.poster_url %>" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold"><%= bookmark.movie.title %></h5>
+          <p class="card-text"><%= bookmark.comment %></p>
+          <%=
+          link_to "Delete Bookmark", list_bookmark_path(@list, bookmark),
+          data: {"turbo-method": :delete, "turbo-confirm": "Are you sure?"},
+          class: "btn btn-primary"
+          %>
+        </div>
+      </div>
+    <% end %>
+  </div>
   <div class="movie-container"></div>
 </div>

@@ -2,7 +2,7 @@
   <h1>New Bookmark for <%= @list.name %> List</h1>
   <%= simple_form_for [@list, @bookmark] do |f|%>
     <%= f.input :comment %>
-    <%= f.input :movie_id, :collection => @movies %>
+    <%= f.association :movie %>
     <%= f.submit %>
   <% end %>
 </div>
