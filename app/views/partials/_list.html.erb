@@ -1,4 +1,6 @@
-<div class="list-card card col-4">
+<div
+  class="list-card card col-4"
+  style="background-image: url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
   <div class="list-body card-body d-flex justify-content-center align-items-center">
     <%= link_to list_path(list) do %>
       <h5 class="list-card-title card-title"><%= list.name %></h5>

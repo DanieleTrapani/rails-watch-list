@@ -75,3 +75,4 @@ gem "simple_form"
 gem "httparty"
 gem 'json'
 gem 'dotenv-rails'
+gem 'cloudinary'
